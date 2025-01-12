@@ -20,3 +20,13 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Proje
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ref\ET3260_Project.dll
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.sourcelink.json
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\SigninWindow.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\Home.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\SigninWindow.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\HomeTab.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\QueryTab.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\HomeTab.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\QueryTab.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\ProfileTab.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\ProfileTab.baml

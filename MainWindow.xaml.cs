@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ET3260_Project.Views;
 
 namespace ET3260_Project
 {
@@ -19,6 +20,26 @@ namespace ET3260_Project
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Tạo và hiển thị cửa sổ mới
+            SigninWindow signinWindow = new SigninWindow();
+            signinWindow.Show();
+
+            // Nếu muốn ẩn cửa sổ hiện tại, dùng:
+            // this.Hide();
+        }
+
+        private void LoginSuccess(object sender, RoutedEventArgs e)
+        {
+            // Tạo và hiển thị cửa sổ mới
+            Home homeWin = new Home();
+            homeWin.Show();
+
+            // Nếu muốn ẩn cửa sổ hiện tại, dùng:
+            // this.Hide();
         }
     }
 }

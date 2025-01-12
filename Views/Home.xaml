@@ -7,6 +7,54 @@
         mc:Ignorable="d"
         Title="Quản lý dịch bệnh và thiên tai - Home" Height="450" Width="800">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="793*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.ColumnSpan="2">
+            <!-- Menu bên trái -->
+
+            <ListBox Width="250" Background="#FF257CA9" Foreground="White" x:Name="menuList" SelectionChanged="ListBoxItem_Selected" Margin="0 50 0 0">
+
+                <ListBoxItem Padding="10 10 0 10" Tag="Home">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="/Resources/Images/home_icon.png" Width="20" Height="20"/>
+                        <TextBlock Text="Trang chủ" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Padding="10 10 0 10" Tag="Query">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="/Resources/Images/server_icon.png" Width="20" Height="20"/>
+                        <TextBlock Text="Tra cứu" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Padding="10 10 0 10" Tag="Profile">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="/Resources/Images/user_icon.png" Width="20" Height="20"/>
+                        <TextBlock Text="Tôi" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem Padding="10 10 0 10" Tag="Logout">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <Image Source="/Resources/Images/log_out.png" Width="20" Height="20"/>
+                        <TextBlock Text="Đăng xuất" FontFamily="/font/#Averta Std CY Semibold" FontSize="18" Margin="20 0 0 0"/>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>
+
+            <!-- Nội dung chính bên phải -->
+            <Grid Background="White" Margin=" 0 50 0 0 ">
+                <ContentControl x:Name="content"/>
+            </Grid>
+        </DockPanel>
+
+        <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Top" Height="50">
+            <StackPanel.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+            </StackPanel.Effect>
+            <TextBlock Text="Chào mừng!" FontWeight="Bold" FontSize="22" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Admin\source\repos\ET3260_Project\App.xaml
-11407045341
+61124470738
 
-41022963892
+938358003
 198-556154604
-MainWindow.xaml;
+MainWindow.xaml;Views\Home.xaml;Views\HomeTab.xaml;Views\ProfileTab.xaml;Views\QueryTab.xaml;Views\SigninWindow.xaml;
 
 False
 

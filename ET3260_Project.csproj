@@ -10,10 +10,28 @@
 
   <ItemGroup>
     <None Remove="Resources\Images\background.jpg" />
+    <None Remove="Resources\Images\clipboard.png" />
+    <None Remove="Resources\Images\flood.png" />
+    <None Remove="Resources\Images\home_icon.png" />
+    <None Remove="Resources\Images\landslide.png" />
+    <None Remove="Resources\Images\log_out.png" />
+    <None Remove="Resources\Images\piechart_icon.png" />
+    <None Remove="Resources\Images\satlo.png" />
+    <None Remove="Resources\Images\server_icon.png" />
+    <None Remove="Resources\Images\user_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Images\background.jpg" />
+    <Resource Include="Resources\Images\clipboard.png" />
+    <Resource Include="Resources\Images\flood.png" />
+    <Resource Include="Resources\Images\home_icon.png" />
+    <Resource Include="Resources\Images\landslide.png" />
+    <Resource Include="Resources\Images\log_out.png" />
+    <Resource Include="Resources\Images\piechart_icon.png" />
+    <Resource Include="Resources\Images\satlo.png" />
+    <Resource Include="Resources\Images\server_icon.png" />
+    <Resource Include="Resources\Images\user_icon.png" />
   </ItemGroup>
 
 </Project>

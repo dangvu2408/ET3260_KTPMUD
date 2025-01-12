@@ -10,6 +10,15 @@
     <Compile Update="Views\Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\HomeTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ProfileTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\QueryTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SigninWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +28,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ProfileTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\QueryTab.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SigninWindow.xaml">

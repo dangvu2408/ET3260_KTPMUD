@@ -23,5 +23,29 @@ namespace ET3260_Project.Views
         {
             InitializeComponent();
         }
+
+        private void ListBoxItem_Selected(object sender, SelectionChangedEventArgs e)
+        {
+            ListBoxItem selectedItem = (ListBoxItem)((ListBox)sender).SelectedItem;
+            if (selectedItem != null)
+            {
+                string selectedTag = selectedItem.Tag.ToString();
+                switch (selectedTag)
+                {
+                    case "Home":
+                        content.Content = new Views.HomeTab(); 
+                        break;
+                    case "Query":
+                        content.Content = new Views.QueryTab(); 
+                        break;
+                    case "Profile":
+                        content.Content = new Views.ProfileTab();
+                        break;
+                    case "Logout":
+                        content.Content = new Views.ProfileTab();
+                        break;
+                }
+            }
+        }
     }
 }
