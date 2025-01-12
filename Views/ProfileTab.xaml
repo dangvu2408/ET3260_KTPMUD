@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ET3260_Project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="ForestGreen">
+             Background="Wheat">
     <Grid>
             
     </Grid>

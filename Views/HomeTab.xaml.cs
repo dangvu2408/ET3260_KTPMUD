@@ -24,5 +24,29 @@ namespace ET3260_Project.Views
         {
             InitializeComponent();
         }
+
+        private void DiemTruotLo(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addDiemTruotLo win1 = new addDiemTruotLo();
+            win1.Show();
+        }
+
+        private void DiemLuQuet(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addDiemLuQuet win2 = new addDiemLuQuet();
+            win2.Show();
+        }
+
+        private void LoaiDichBenh(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addLoaiDichBenh win3 = new addLoaiDichBenh();
+            win3.Show();
+        }
+
+        private void TrieuChung(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addTrieuChung win4 = new addTrieuChung();
+            win4.Show();
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ET3260_Project.Views"
         mc:Ignorable="d"
-        Title="Quản lý dịch bệnh và thiên tai - Home" Height="450" Width="800">
+        Title="Quản lý dịch bệnh và thiên tai - Home" Height="450" Width="1000">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -50,11 +50,11 @@
             </Grid>
         </DockPanel>
 
-        <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Top" Height="50">
+        <StackPanel Orientation="Horizontal" Background="White" VerticalAlignment="Top" Height="50" Grid.ColumnSpan="2">
             <StackPanel.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
             </StackPanel.Effect>
-            <TextBlock Text="Chào mừng!" FontWeight="Bold" FontSize="22" Margin="10"/>
+            <TextBlock Text="Chào mừng bạn đến với hệ thống quản lý dịch bệnh và thiên tai!" FontWeight="Bold" FontSize="20" Margin="10"/>
         </StackPanel>
     </Grid>
 </Window>
