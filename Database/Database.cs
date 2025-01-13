@@ -10,7 +10,8 @@ namespace ET3260_Project.Database
 {
     public class Database
     {
-        private string databaseConnector = "Data Source=Stoner;Initial Catalog=quanlydichbenh;Integrated Security=True";
+        private string databaseConnector = "Server=LAPTOP-DRS5765Q\\LOCALHOST;Database=quanlydichbenh;Trusted_Connection=True;";
+
         private SqlConnection connect;
         private string sql;
         private DataTable table;
@@ -29,7 +30,7 @@ namespace ET3260_Project.Database
             }
         }
 
-        public bool addUser(string gmail, string password, int role, string fullname)
+        public bool addUser(string email, string password, int role, string fullname)
         {
             try
             {
@@ -37,10 +38,10 @@ namespace ET3260_Project.Database
                 {
                     connector.Open();
 
-                    string sql = "INSERT INTO user (gmail, password, role, fullname) VALUES (@Gmail, @Password, @Role, @Fullname)";
+                    string sql = "INSERT INTO [user] (email, password, fullname, role) VALUES (@Email, @Password, @Fullname, @Role)";
                     using (SqlCommand cmd = new SqlCommand(sql, connector))
                     {
-                        cmd.Parameters.AddWithValue("@Gmail", gmail);
+                        cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Password", password);
                         cmd.Parameters.AddWithValue("@Role", role);
                         cmd.Parameters.AddWithValue("@Fullname", fullname);
@@ -55,6 +56,89 @@ namespace ET3260_Project.Database
             {
                 MessageBox.Show("Error adding user: " + e.Message);
                 return false;
+            }
+        }
+
+        public bool authenticateUser(string email, string password)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT COUNT(*) FROM [user] WHERE email = @Email AND password = @Password";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Password", password);
+
+                int count = (int)command.ExecuteScalar();
+
+                return count > 0;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error authenticate user: " + e.Message);
+                return false;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
+        public string getUserRole(string username)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT role FROM [user] WHERE email = @Username";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+                return result != null ? result.ToString() : string.Empty;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error getting user role: " + e.Message);
+                return string.Empty;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
+        public string GetUserFullName(string username)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT fullname FROM [user] WHERE email = @Username";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+                return result != null ? result.ToString() : string.Empty;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error getting user fullname: " + e.Message);
+                return string.Empty;
+            }
+            finally
+            {
+                connect.Close();
             }
         }
     }

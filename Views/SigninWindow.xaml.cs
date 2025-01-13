@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using ET3260_Project.Database;
+
 namespace ET3260_Project.Views
 {
     /// <summary>
@@ -19,9 +21,52 @@ namespace ET3260_Project.Views
     /// </summary>
     public partial class SigninWindow : Window
     {
+        private Database.Database database;
         public SigninWindow()
         {
             InitializeComponent();
+            database = new Database.Database();
+        }
+
+        private void RegisterClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string email = em.Text;
+                string fullname = un.Text;
+                string password = ps.Password;
+                int role = 0;
+                if (UserDropdown.SelectedItem is ComboBoxItem selectedItem)
+                {
+                    string selectedContent = selectedItem.Content.ToString();
+
+                    if (selectedContent == "Quản trị")
+                    {
+                        role = 1;
+                    }
+                    else if (selectedContent == "Cán bộ nghiệp vụ")
+                    {
+                        role = 2;
+                    }
+
+                }
+
+                bool success = database.addUser(email, password, role, fullname);
+                if (success)
+                {
+                    MessageBox.Show("User added successfully!");
+
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add user. Try again!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

@@ -34,7 +34,7 @@
                 
                 
                 <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="0 10 0 0">
-                    <Button Content="ĐĂNG KÍ" Width="150" Height="25" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                    <Button Content="ĐĂNG KÍ"  Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="RegisterClick"/>
                 </Border>
                 
             </StackPanel>

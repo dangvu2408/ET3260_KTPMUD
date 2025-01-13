@@ -9,6 +9,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ET3260_Project.Views;
+using ET3260_Project.Database;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
 
 namespace ET3260_Project
 {
@@ -17,9 +20,11 @@ namespace ET3260_Project
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Database.Database database;
         public MainWindow()
         {
             InitializeComponent();
+            database = new Database.Database();
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
@@ -34,12 +39,33 @@ namespace ET3260_Project
 
         private void LoginSuccess(object sender, RoutedEventArgs e)
         {
-            // Tạo và hiển thị cửa sổ mới
-            Home homeWin = new Home();
-            homeWin.Show();
 
-            // Nếu muốn ẩn cửa sổ hiện tại, dùng:
-            // this.Hide();
+            string username = un.Text;
+            string password = ps.Password;
+
+            if (database.authenticateUser(username, password))
+            {
+                string role = database.getUserRole(username);
+                string fullname = database.GetUserFullName(username);
+
+                User current = new User { email = username, Role = role, Fullname = fullname };
+                Home homeWin = new Home();
+                homeWin.Show();
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập không thành công. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.");
+            }
+            
         }
     }
+}
+
+// Tạo một lớp User chứa thông tin người dùng
+public class User
+{
+    public string Fullname { get; set; }
+    public string Role { get; set; }
+    public string email { get; set; }
+    // Thêm các thuộc tính khác của người dùng nếu cần
 }

@@ -18,7 +18,6 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\refint\ET326
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.pdb
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.genruntimeconfig.cache
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ref\ET3260_Project.dll
-C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.sourcelink.json
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\Home.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\SigninWindow.g.cs
@@ -40,3 +39,11 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addLoa
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addTrieuChung.baml
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addODich.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addODich.baml
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_P.E1C49DC3.Up2Date

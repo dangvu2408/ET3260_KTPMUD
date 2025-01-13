@@ -85,7 +85,7 @@ namespace ET3260_Project.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ET3260_Project;V1.0.0.0;component/views/addodich.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ET3260_Project;component/views/addodich.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\addODich.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
