@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\profiletab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\profiletab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\signinwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\profiletab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\profiletab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\signinwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\querytab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\querytab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +62,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "ProfileTab.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\ProfileTab.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ProfileTab.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\ProfileTab.xaml.cs",
+              "RelativeToolTip": "Views\\ProfileTab.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:15:37.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfileTab.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\ProfileTab.xaml",
+              "RelativeDocumentMoniker": "Views\\ProfileTab.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\ProfileTab.xaml",
+              "RelativeToolTip": "Views\\ProfileTab.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-13T10:18:54.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T09:13:56.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "SigninWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\SigninWindow.xaml.cs",
               "RelativeDocumentMoniker": "Views\\SigninWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\SigninWindow.xaml.cs",
               "RelativeToolTip": "Views\\SigninWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T03:22:41.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SigninWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\SigninWindow.xaml",
               "RelativeDocumentMoniker": "Views\\SigninWindow.xaml",
@@ -79,20 +129,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA+wDMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T04:34:51.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -104,13 +154,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs",
               "RelativeDocumentMoniker": "Database\\Database.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs*",
-              "RelativeToolTip": "Database\\Database.cs*",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAUwIcAAAA8AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs",
+              "RelativeToolTip": "Database\\Database.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwC0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T02:18:12.256Z",
               "EditorCaption": ""
@@ -118,17 +168,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "QueryTab.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\QueryTab.xaml",
-              "RelativeDocumentMoniker": "Views\\QueryTab.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\QueryTab.xaml",
-              "RelativeToolTip": "Views\\QueryTab.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-12T02:34:48.134Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "HomeTab.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml",
               "RelativeDocumentMoniker": "Views\\HomeTab.xaml",
@@ -140,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "HomeTab.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml.cs",
               "RelativeDocumentMoniker": "Views\\HomeTab.xaml.cs",
@@ -153,26 +192,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml.cs*",
+              "RelativeToolTip": "Views\\Home.xaml.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAawDEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T01:52:32.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QueryTab.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\QueryTab.xaml",
+              "RelativeDocumentMoniker": "Views\\QueryTab.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\QueryTab.xaml",
+              "RelativeToolTip": "Views\\QueryTab.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-12T02:34:48.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml",
               "RelativeDocumentMoniker": "Views\\Home.xaml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml",
               "RelativeToolTip": "Views\\Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-11T15:39:27.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Home.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\Home.xaml.cs",
-              "RelativeToolTip": "Views\\Home.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T01:52:32.797Z",
+              "WhenOpened": "2025-01-11T15:39:27.422Z",
               "EditorCaption": ""
             }
           ]

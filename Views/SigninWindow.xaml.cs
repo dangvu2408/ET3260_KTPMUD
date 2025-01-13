@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,7 +56,9 @@ namespace ET3260_Project.Views
                 if (success)
                 {
                     MessageBox.Show("User added successfully!");
-
+                    DataTable userData = database.getUser();
+                    
+                    this.Hide();
                     
                 }
                 else

@@ -6,8 +6,45 @@
              xmlns:local="clr-namespace:ET3260_Project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="Wheat">
-    <Grid>
-            
-    </Grid>
+             Background="white">
+    <ScrollViewer>
+        <Grid>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Quản lý tài khoản" FontSize="20" FontWeight="Black" Foreground="Black" Margin="10"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Resources/Images/user-avatar.png" Width="50" Height="50" Margin="10 0 0 0"/>
+                    <StackPanel Orientation="Vertical" Height="50">
+                        <TextBlock Text="Đặng Quang Vũ" Name="UserFullname" FontSize="18" Margin="10 0 0 0" FontWeight="Bold" />
+                        <TextBlock Text="Quản trị" Name="UserRoleField" FontSize="15" Margin="10 0 0 0" />
+                    </StackPanel>
+                </StackPanel>
+                <Separator Height="20" Background="Transparent"/>
+                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                    <Image Source="/Resources/Images/edit.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Chỉnh sửa thông tin cá nhân" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                    <Image Source="/Resources/Images/reset-password.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Đổi mật khẩu" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                    <Image Source="/Resources/Images/database.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Truy vấn người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel x:Name="Role1Display1st" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                    <Image Source="/Resources/Images/plus-square.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Thêm người dùng mới" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                    <Image Source="/Resources/Images/edit-3.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    <TextBlock Text="Chỉnh sửa thông tin người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+    
 </UserControl>

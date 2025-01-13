@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ET3260_Project.Views;
+using ET3260_Project.Models;
 using ET3260_Project.Database;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
@@ -49,7 +50,7 @@ namespace ET3260_Project
                 string fullname = database.GetUserFullName(username);
 
                 User current = new User { email = username, Role = role, Fullname = fullname };
-                Home homeWin = new Home();
+                Home homeWin = new Home(current);
                 homeWin.Show();
             }
             else
@@ -62,10 +63,3 @@ namespace ET3260_Project
 }
 
 // Tạo một lớp User chứa thông tin người dùng
-public class User
-{
-    public string Fullname { get; set; }
-    public string Role { get; set; }
-    public string email { get; set; }
-    // Thêm các thuộc tính khác của người dùng nếu cần
-}

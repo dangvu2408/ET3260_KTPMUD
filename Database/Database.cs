@@ -141,5 +141,32 @@ namespace ET3260_Project.Database
                 connect.Close();
             }
         }
+
+        public DataTable getUser()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM [user]";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error getting user data: " + e.Message);
+                return null;
+            }
+        }
     }
 }

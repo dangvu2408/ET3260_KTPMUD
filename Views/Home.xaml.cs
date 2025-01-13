@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ET3260_Project.Models;
+using ET3260_Project.Database;
 
 namespace ET3260_Project.Views
 {
@@ -19,9 +21,12 @@ namespace ET3260_Project.Views
     /// </summary>
     public partial class Home : Window
     {
-        public Home()
+        private User current;
+        private Database.Database database;
+        public Home(User user)
         {
             InitializeComponent();
+            current = user;
         }
 
         private void ListBoxItem_Selected(object sender, SelectionChangedEventArgs e)
@@ -39,10 +44,10 @@ namespace ET3260_Project.Views
                         content.Content = new Views.QueryTab(); 
                         break;
                     case "Profile":
-                        content.Content = new Views.ProfileTab();
+                        content.Content = new Views.ProfileTab(current);
                         break;
                     case "Logout":
-                        content.Content = new Views.ProfileTab();
+                        this.Hide();
                         break;
                 }
             }
