@@ -45,7 +45,7 @@
                     </StackPanel>
                     <Separator Width="20" Background="Transparent"/>
 
-                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="10" MouseLeftButtonDown="ODich">
                         <Image Source="/Resources/Images/contagion.png" Width="40" Height="40"/>
                         <TextBlock Text="Ổ dịch" FontSize="16" />
                     </StackPanel>

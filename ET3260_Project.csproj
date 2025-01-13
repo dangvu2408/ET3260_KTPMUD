@@ -8,6 +8,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+	</ItemGroup>
+
   <ItemGroup>
     <None Remove="Resources\Images\background.jpg" />
     <None Remove="Resources\Images\clinic.png" />

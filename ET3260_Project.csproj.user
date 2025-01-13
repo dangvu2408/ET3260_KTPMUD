@@ -16,6 +16,9 @@
     <Compile Update="Views\addLoaiDichBenh.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\addODich.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\addTrieuChung.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addLoaiDichBenh.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\addODich.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addTrieuChung.xaml">

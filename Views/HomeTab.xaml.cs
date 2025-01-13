@@ -48,5 +48,11 @@ namespace ET3260_Project.Views
             addTrieuChung win4 = new addTrieuChung();
             win4.Show();
         }
+
+        private void ODich(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addODich win5 = new addODich();
+            win5.Show();
+        }
     }
 }
