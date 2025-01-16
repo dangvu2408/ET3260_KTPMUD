@@ -68,7 +68,7 @@ namespace ET3260_Project.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Lỗi 00: " + ex.Message);
             }
         }
     }

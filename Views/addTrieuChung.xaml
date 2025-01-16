@@ -11,10 +11,10 @@
             <Label Content="Tên triệu chứng" Foreground="Black" Margin="10 0 10 0"/>
             <TextBox x:Name="name" Text="" Padding="5" Margin="10 0 10 0" />
             <Label Content="Mô tả" Foreground="Black" Margin="10 0 10 0" />
-            <TextBox x:Name="address" Height="81" Text="" Padding="5" Margin="10 0 10 0" />
+            <TextBox x:Name="describe" Height="81" Text="" Padding="5" Margin="10 0 10 0" />
 
             <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="10">
-                <Button Content="Thêm" Width="150" Height="25" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button Content="Thêm" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="addTrieuChung_btn"/>
             </Border>
 
         </StackPanel>

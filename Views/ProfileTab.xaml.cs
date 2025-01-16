@@ -32,10 +32,16 @@ namespace ET3260_Project.Views
             if (currentUser.Role == "1")
             {
                 UserRoleField.Text = "Quản trị";
+                Role1Display1st.Visibility = Visibility.Visible;
+                Role1Display2nd.Visibility = Visibility.Visible;
+                Role1Display3rd.Visibility = Visibility.Visible;
             }
             if (currentUser.Role == "2")
             {
                 UserRoleField.Text = "Cán bộ nghiệp vụ";
+                Role1Display1st.Visibility = Visibility.Collapsed;
+                Role1Display2nd.Visibility = Visibility.Collapsed;
+                Role1Display3rd.Visibility = Visibility.Collapsed;
             }
         }
     }

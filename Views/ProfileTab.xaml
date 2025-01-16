@@ -29,17 +29,17 @@
                     <TextBlock Text="Đổi mật khẩu" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                <StackPanel x:Name="Role1Display1st" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
                     <Image Source="/Resources/Images/database.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
                     <TextBlock Text="Truy vấn người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel x:Name="Role1Display1st" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
                     <Image Source="/Resources/Images/plus-square.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
                     <TextBlock Text="Thêm người dùng mới" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                <StackPanel x:Name="Role1Display3rd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
                     <Image Source="/Resources/Images/edit-3.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
                     <TextBlock Text="Chỉnh sửa thông tin người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>

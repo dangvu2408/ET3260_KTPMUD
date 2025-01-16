@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ET3260_Project.Models;
 
 namespace ET3260_Project.Views
 {
@@ -20,32 +23,38 @@ namespace ET3260_Project.Views
     /// </summary>
     public partial class addLoaiDichBenh : Window
     {
-        public ObservableCollection<SelectableItem> Items { get; set; }
+        public ObservableCollection<TrieuChungItem> TrieuChungItems { get; set; }
+        private Database.Database database;
+        private List<TrieuChungItem> list;
         public addLoaiDichBenh()
         {
             InitializeComponent();
-
-            Items = new ObservableCollection<SelectableItem>
+            database = new Database.Database();
+            list = new List<TrieuChungItem>();
+            DataTable listTrieuChung = database.getTrieuChung();
+            foreach (DataRow row in listTrieuChung.Rows)
             {
-                new SelectableItem { Name = "Option 1", IsSelected = false },
-                new SelectableItem { Name = "Option 2", IsSelected = false },
-                new SelectableItem { Name = "Option 3", IsSelected = false },
-                new SelectableItem { Name = "Option 4", IsSelected = false },
-            };
+                list.Add(new TrieuChungItem
+                {
+                    Name = row["tenTrieuChung"].ToString(), 
+                    Description = row["moTa"].ToString(), 
+                    IsSelected = false 
+                });
+            }
 
-            // Gán dữ liệu cho ComboBox
-            comboBox.ItemsSource = Items;
+            TrieuChungItems = new ObservableCollection<TrieuChungItem>(list.Cast<TrieuChungItem>());
+
+            comboBox.ItemsSource = TrieuChungItems;
+
         }
 
-        private void ShowSelectedItems_Click(object sender, RoutedEventArgs e)
+        private void AddLoaiDichBenh_Click(object sender, RoutedEventArgs e)
         {
-            // Lấy các mục đã chọn
-            var selectedItems = Items.Where(item => item.IsSelected)
-                                      .Select(item => item.Name);
-
-            // Hiển thị danh sách mục đã chọn
-            MessageBox.Show("Mục đã chọn: " + string.Join(", ", selectedItems));
+            
         }
+
+        
+
     }
 
     public class SelectableItem

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace ET3260_Project.Database
@@ -54,7 +55,7 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error adding user: " + e.Message);
+                MessageBox.Show("Lỗi thêm người dùng mới: " + e.Message);
                 return false;
             }
         }
@@ -79,7 +80,7 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error authenticate user: " + e.Message);
+                MessageBox.Show("Lỗi xác thực: " + e.Message);
                 return false;
             }
             finally
@@ -106,7 +107,7 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error getting user role: " + e.Message);
+                MessageBox.Show("Lỗi lấy quyền người dùng: " + e.Message);
                 return string.Empty;
             }
             finally
@@ -133,7 +134,7 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error getting user fullname: " + e.Message);
+                MessageBox.Show("Lỗi lấy tên người dùng: " + e.Message);
                 return string.Empty;
             }
             finally
@@ -164,9 +165,120 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error getting user data: " + e.Message);
+                MessageBox.Show("Lỗi lấy thông tin người dùng: " + e.Message);
                 return null;
             }
         }
+
+        public bool addDiemLuQuet(string tenDiem, string diaDiem, string date)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO diemLuQuet (tenDiemLQ, diaDiemLQ, ngayLuQuet) VALUES (@Name, @Address, @Date)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", tenDiem);
+                        cmd.Parameters.AddWithValue("@Address", diaDiem);
+                        cmd.Parameters.AddWithValue("@Date", date);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm điểm lũ quét: " + e.Message);
+                return false;
+            }
+        }
+
+        public bool addDiemTruotLo(string tenDiem, string diaDiem, string date)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO diemTruotLo (tenDiemTL, diaDiemTL, ngayTruotLo) VALUES (@Name, @Address, @Date)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", tenDiem);
+                        cmd.Parameters.AddWithValue("@Address", diaDiem);
+                        cmd.Parameters.AddWithValue("@Date", date);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm điểm lũ quét: " + e.Message);
+                return false;
+            }
+        }
+
+        public bool addTrieuChung(string tenTrieuChung, string mota)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO trieuChung (tenTrieuChung, moTa) VALUES (@Name, @Describe)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", tenTrieuChung);
+                        cmd.Parameters.AddWithValue("@Describe", mota);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm triệu chứng lâm sàng: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getTrieuChung()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM trieuChung";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy triệu chứng: " + e.Message);
+                return null;
+            }
+        }
+
     }
 }
