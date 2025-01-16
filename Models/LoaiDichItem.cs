@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ET3260_Project.Models
 {
-    public class TrieuChungItem
+    public class LoaiDichItem
     {
-        public string Name { get; set; } 
-        public string Description { get; set; } 
-        public bool IsSelected { get; set; } 
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public bool IsSelected { get; set; }
         public int ID { get; set; }
     }
 }

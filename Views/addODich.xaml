@@ -22,7 +22,7 @@
             <Label Content="Ngày phát hiện" Foreground="Black" Margin="10 0 10 0"/>
             <TextBox x:Name="day" Text="" Padding="5" Margin="10 0 10 0" />
             <Label Content="Trạng thái ổ dịch" Foreground="Black" Margin="10 0 10 0"/>
-            <ComboBox Name="queryDropdown"
+            <ComboBox x:Name="status"
                 Height="27"
                 IsEditable="True"
                 Margin="10 0 10 0"
@@ -31,7 +31,7 @@
                 <ComboBoxItem Content="Nguy hiểm" />
             </ComboBox>
             <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="10">
-                <Button Content="Thêm" Width="150" Height="25" Background="Transparent" BorderThickness="0" Foreground="White"/>
+                <Button Content="Thêm" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="AddODich_Click"/>
             </Border>
 
         </StackPanel>

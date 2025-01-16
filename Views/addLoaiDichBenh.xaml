@@ -20,7 +20,7 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <Label Content="Mô tả" Foreground="Black" Margin="10 0 10 0" />
-            <TextBox x:Name="address" Height="75" Text="" Padding="5" Margin="10 0 10 0" />
+            <TextBox x:Name="describe" Height="75" Text="" Padding="5" Margin="10 0 10 0" />
             
             <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="10">
                 <Button Content="Thêm" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="AddLoaiDichBenh_Click"/>

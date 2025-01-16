@@ -280,5 +280,113 @@ namespace ET3260_Project.Database
             }
         }
 
+        public bool addLoaiDichBenh(string tenLoaiDich, string moTa, List<int> listTrieuChungIds)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO loaiDichBenh (tenLoaiDich, moTa) OUTPUT INSERTED.id_loaiDich VALUES (@tenLoaiDich, @moTa)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@tenLoaiDich", tenLoaiDich);
+                        cmd.Parameters.AddWithValue("@moTa", moTa);
+
+                        int idLoaiDich = (int)cmd.ExecuteScalar();
+
+                        foreach (var trieuChungId in listTrieuChungIds)
+                        {
+                            string insertTrieuChungQuery = "INSERT INTO loaiDichBenh_trieuChung (id_loaiDich, id_trieuChung) VALUES (@idLoaiDich, @idTrieuChung)";
+                            using (SqlCommand insertCmd = new SqlCommand(insertTrieuChungQuery, connector))
+                            {
+                                insertCmd.Parameters.AddWithValue("@idLoaiDich", idLoaiDich);
+                                insertCmd.Parameters.AddWithValue("@idTrieuChung", trieuChungId);
+                                insertCmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm loại dịch bệnh: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getLoaiDich()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM loaiDichBenh";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy loại dịch bệnh: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addODich(string tenODich, List<int> listLoaiDichIds, string dayODich, int statusOD)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO ODich (tenODich, ngayPhatHien, trangThai) OUTPUT INSERTED.id_ODich VALUES (@tenODich, @ngayPhatHien, @trangThai)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@tenODich", tenODich);
+                        cmd.Parameters.AddWithValue("@ngayPhatHien", dayODich);
+                        cmd.Parameters.AddWithValue("@trangThai", statusOD);
+
+                        int idODich = (int)cmd.ExecuteScalar();
+
+                        foreach (var loaiDichId in listLoaiDichIds)
+                        {
+                            string insertQuery = "INSERT INTO ODich_LoaiDich (id_ODich, id_loaiDich) VALUES (@idODich, @idLoaiDich)";
+                            using (SqlCommand insertCmd = new SqlCommand(insertQuery, connector))
+                            {
+                                insertCmd.Parameters.AddWithValue("@idODich", idODich);
+                                insertCmd.Parameters.AddWithValue("@idLoaiDich", loaiDichId);
+                                insertCmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm loại dịch bệnh: " + e.Message);
+                return false;
+            }
+        }
+
     }
 }

@@ -30,7 +30,6 @@ namespace ET3260_Project
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            // Tạo và hiển thị cửa sổ mới
             SigninWindow signinWindow = new SigninWindow();
             signinWindow.Show();
 
@@ -62,4 +61,3 @@ namespace ET3260_Project
     }
 }
 
-// Tạo một lớp User chứa thông tin người dùng

@@ -29,6 +29,7 @@ namespace ET3260_Project.Views
         public addLoaiDichBenh()
         {
             InitializeComponent();
+
             database = new Database.Database();
             list = new List<TrieuChungItem>();
             DataTable listTrieuChung = database.getTrieuChung();
@@ -38,7 +39,8 @@ namespace ET3260_Project.Views
                 {
                     Name = row["tenTrieuChung"].ToString(), 
                     Description = row["moTa"].ToString(), 
-                    IsSelected = false 
+                    IsSelected = false,
+                    ID = (int)row["id_trieuChung"]
                 });
             }
 
@@ -50,16 +52,42 @@ namespace ET3260_Project.Views
 
         private void AddLoaiDichBenh_Click(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                List<int> selectedIds = new List<int>();
+
+                foreach (var trieuChung in TrieuChungItems)
+                {
+                    if (trieuChung.IsSelected) 
+                    {
+                        selectedIds.Add(trieuChung.ID); 
+                    }
+                }
+
+                string nameLD = name.Text;
+                string describeLD = describe.Text;
+
+                bool success = database.addLoaiDichBenh(nameLD, describeLD, selectedIds);
+                if (success)
+                {
+                    MessageBox.Show("Thêm loại dịch bệnh thành công!");
+
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi thêm loại dịch bệnh!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi 04: " + ex.Message);
+            }
+
         }
 
         
 
     }
 
-    public class SelectableItem
-    {
-        public string Name { get; set; }
-        public bool IsSelected { get; set; }
-    }
 }
