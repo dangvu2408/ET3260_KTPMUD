@@ -483,7 +483,119 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Lỗi thêm người dùng mới: " + e.Message);
+                MessageBox.Show("Lỗi thêm chi cục thú y: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getChiCuc()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM chiCucThuY";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy chi cục thú y: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addDaiLyThuoc(string tenDaiLy, int idChiCuc, string diaChiDL, string soDienThoaiDL)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO daiLyThuoc (tenDaiLy, id_chiCuc, diaChiDL, soDienThoaiDL) VALUES (@Ten, @IDCC, @Diachi, @SDT)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten", tenDaiLy);
+                        cmd.Parameters.AddWithValue("@Diachi", diaChiDL);
+                        cmd.Parameters.AddWithValue("@SDT", soDienThoaiDL);
+                        cmd.Parameters.AddWithValue("@IDCC", idChiCuc);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm đại lý bán thuốc: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getDaiLy()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM daiLyThuoc";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy đại lý thuốc: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addKhuTamGiu(string tenKhuTamGiu, int idChiCuc, string diaChiKTG, string soDienThoaiKTG)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO khuTamGiu  (tenKhuTamGiu, id_chiCuc, diaChiKTG, soDienThoaiKTG) VALUES (@Ten, @IDCC, @Diachi, @SDT)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten", tenKhuTamGiu);
+                        cmd.Parameters.AddWithValue("@Diachi", diaChiKTG);
+                        cmd.Parameters.AddWithValue("@SDT", soDienThoaiKTG);
+                        cmd.Parameters.AddWithValue("@IDCC", idChiCuc);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm khu tạm giữ: " + e.Message);
                 return false;
             }
         }

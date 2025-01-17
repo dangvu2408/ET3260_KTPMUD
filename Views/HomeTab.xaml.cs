@@ -66,5 +66,17 @@ namespace ET3260_Project.Views
             addChiCucThuY win7 = new addChiCucThuY();
             win7.Show();
         }
+
+        private void DaiLyThuoc(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addDaiLyThuoc win8 = new addDaiLyThuoc();
+            win8.Show();
+        }
+
+        private void KhuTamGiu(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addKhuTamGiu win9 = new addKhuTamGiu();
+            win9.Show();
+        }
     }
 }

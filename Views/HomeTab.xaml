@@ -59,13 +59,13 @@
                         <TextBlock Text="Chi cục thú y" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="DiemLuQuet">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="DaiLyThuoc">
                         <Image Source="/Resources/Images/medicine.png" Width="40" Height="40"/>
                         <TextBlock Text="Đại lý bán thuốc" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
                     <Separator Width="20" Background="Transparent"/>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="KhuTamGiu">
                         <Image Source="/Resources/Images/smart.png" Width="40" Height="40"/>
                         <TextBlock Text="Khu tạm giữ, tiêu hủy" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>

@@ -10,10 +10,16 @@
     <Compile Update="Views\addChiCucThuY.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\addDaiLyThuoc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\addDiemLuQuet.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\addDiemTruotLo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\addKhuTamGiu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\addLichTiemPhong.xaml.cs">
@@ -51,10 +57,16 @@
     <Page Update="Views\addChiCucThuY.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\addDaiLyThuoc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\addDiemLuQuet.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addDiemTruotLo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\addKhuTamGiu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addLoaiDichBenh.xaml">
