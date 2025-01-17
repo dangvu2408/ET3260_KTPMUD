@@ -7,10 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\addChiCucThuY.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\addDiemLuQuet.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\addDiemTruotLo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\addLichTiemPhong.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\addLoaiDichBenh.xaml.cs">
@@ -40,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\addChiCucThuY.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addDiemLuQuet.xaml">

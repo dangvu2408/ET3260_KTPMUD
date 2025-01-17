@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows;
 using System.Xml.Linq;
+using ET3260_Project.Views;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
@@ -383,10 +384,108 @@ namespace ET3260_Project.Database
             }
             catch (Exception e)
             {
-                MessageBox.Show("Lỗi thêm loại dịch bệnh: " + e.Message);
+                MessageBox.Show("Lỗi thêm ổ dịch bệnh: " + e.Message);
                 return false;
             }
         }
 
+        public DataTable getODich()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM ODich";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy ổ dịch: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addLichTiemPhong(string tenVaccine, int ODichID, string ngayTiem, int soLuong) 
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO Vaccine (tenVaccine) OUTPUT INSERTED.id_Vaccine VALUES (@tenVaccine)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@tenVaccine", tenVaccine);
+
+                        int idVaccine = (int)cmd.ExecuteScalar();
+
+                        string insertQuery = "INSERT INTO Vaccine_ODich (id_Vaccine, id_ODich, ngayTiem, soLuongTiem) VALUES (@id_Vaccine, @id_ODich, @NgayTiem, @SoLuong)";
+                        using (SqlCommand insertCmd = new SqlCommand(insertQuery, connector))
+                        {
+                            insertCmd.Parameters.AddWithValue("@id_Vaccine", idVaccine);
+                            insertCmd.Parameters.AddWithValue("@id_ODich", ODichID);
+                            insertCmd.Parameters.AddWithValue("@NgayTiem", ngayTiem);
+                            insertCmd.Parameters.AddWithValue("@SoLuong", soLuong);
+                            insertCmd.ExecuteNonQuery();
+                        }
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm lịch vaccine: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getLichTiem()
+        {
+            // nothing to think...
+            return null;
+        }
+
+        public bool addChiCucThuY(string tenChiCuc, string diaChiCC, string soDienThoaiCC)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO chiCucThuY (tenChiCuc, diaChiCC, soDienThoaiCC) VALUES (@Ten, @Diachi, @SDT)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten", tenChiCuc);
+                        cmd.Parameters.AddWithValue("@Diachi", diaChiCC);
+                        cmd.Parameters.AddWithValue("@SDT", soDienThoaiCC);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm người dùng mới: " + e.Message);
+                return false;
+            }
+        }
     }
 }

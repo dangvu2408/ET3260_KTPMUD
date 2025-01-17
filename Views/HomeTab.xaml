@@ -46,7 +46,7 @@
                         <TextBlock Text="Ổ dịch" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="TiemPhong">
                         <Image Source="/Resources/Images/injection.png" Width="40" Height="40"/>
                         <TextBlock Text="Tiêm phòng" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -54,7 +54,7 @@
 
                 <TextBlock Text="Chăn nuôi" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
                 <StackPanel Orientation="Vertical" >
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="DiemTruotLo">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ChiCuc">
                         <Image Source="/Resources/Images/clinic.png" Width="40" Height="40"/>
                         <TextBlock Text="Chi cục thú y" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>

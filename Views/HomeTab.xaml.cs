@@ -54,5 +54,17 @@ namespace ET3260_Project.Views
             addODich win5 = new addODich();
             win5.Show();
         }
+
+        private void TiemPhong(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addLichTiemPhong win6 = new addLichTiemPhong();
+            win6.Show();
+        }
+
+        private void ChiCuc(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addChiCucThuY win7 = new addChiCucThuY();
+            win7.Show();
+        }
     }
 }

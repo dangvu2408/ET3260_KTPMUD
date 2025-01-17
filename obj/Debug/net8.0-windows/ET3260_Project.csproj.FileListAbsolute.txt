@@ -47,3 +47,7 @@ C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\uni
 C:\Users\Admin\source\repos\ET3260_Project\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_Project.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\ET3260_P.E1C49DC3.Up2Date
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addLichTiemPhong.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addLichTiemPhong.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addChiCucThuY.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addChiCucThuY.baml
