@@ -90,5 +90,17 @@ namespace ET3260_Project.Views
             addCoSoCheBien win11 = new addCoSoCheBien();
             win11.Show();
         }
+
+        private void CoSoGietMo(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addCoSoGietMo win12 = new addCoSoGietMo();
+            win12.Show();
+        }
+
+        private void ToChucChungNhan(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addToChucChungNhan win13 = new addToChucChungNhan();
+            win13.Show();
+        }
     }
 }

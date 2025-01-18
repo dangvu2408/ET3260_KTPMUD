@@ -70,7 +70,7 @@
                         <TextBlock Text="Khu tạm giữ, tiêu hủy" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="CoSoGietMo">
                         <Image Source="/Resources/Images/meat-grinder.png" Width="40" Height="40"/>
                         <TextBlock Text="Cơ sở giết mổ" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -87,7 +87,7 @@
                         <TextBlock Text="Hộ chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ToChucChungNhan">
                         <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
                         <TextBlock Text="Tổ chức chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>

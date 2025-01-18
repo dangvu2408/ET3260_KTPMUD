@@ -59,3 +59,7 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoS
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoSoChanNuoi.baml
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoSoCheBien.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoSoCheBien.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoSoGietMo.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addCoSoGietMo.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addToChucChungNhan.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addToChucChungNhan.baml
