@@ -836,7 +836,7 @@ namespace ET3260_Project.Database
             }
         }
 
-        public DataTable GetToChucChungNhan()
+        public DataTable getToChucChungNhan()
         {
             try
             {
@@ -859,6 +859,186 @@ namespace ET3260_Project.Database
             catch (Exception e)
             {
                 MessageBox.Show("Lỗi lấy tổ chức chứng nhận: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addGiayChungNhan(string tenChungNhan, int idToChuc, List<int> listIdCoSoCN, string ngayChungNhan)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO giayChungNhan (tenCN, id_tochucCN, ngayCN) OUTPUT INSERTED.id_giayCN VALUES (@tenCN, @id_tochucCN, @ngayCN)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@tenCN", tenChungNhan);
+                        cmd.Parameters.AddWithValue("@id_tochucCN", idToChuc);
+                        cmd.Parameters.AddWithValue("@ngayCN", ngayChungNhan);
+
+                        int idGiayChungNhan = (int)cmd.ExecuteScalar();
+
+                        foreach (var coSoChanNuoiId in listIdCoSoCN)
+                        {
+                            string insertTrieuChungQuery = "INSERT INTO csChanNuoi_giayChungNhan (id_csChanNuoi, id_giayCN) VALUES (@id_csChanNuoi, @id_giayCN)";
+                            using (SqlCommand insertCmd = new SqlCommand(insertTrieuChungQuery, connector))
+                            {
+                                insertCmd.Parameters.AddWithValue("@id_csCheBien", idGiayChungNhan);
+                                insertCmd.Parameters.AddWithValue("@id_giayCN", coSoChanNuoiId);
+                                insertCmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm giấy chứng nhận: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getGiayChungNhan()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM giayChungNhan";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy giấy chứng nhận: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addVungChanNuoi(string diaDiem, int idChiCuc, int trangThai)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO vungChanNuoi (diaDiem, trangThai, id_csChanNuoi) VALUES (@diaDiem, @trangThai, @id_csChanNuoi)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@diaDiem", diaDiem);
+                        cmd.Parameters.AddWithValue("@trangThai", trangThai);
+                        cmd.Parameters.AddWithValue("@id_csChanNuoi", idChiCuc);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm vùng chăn nuôi: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getVungChanNuoi()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM vungChanNuoi";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy vùng chăn nuôi: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addHoChanNuoi(string name, int idVung, string nguoiDaiDien, string email, string soDienthoai)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO hoChanNuoi (id_vungChanNuoi, tenHo, nguoiDaiDien, email, soDT) VALUES (@id_vungChanNuoi, @tenHo, @nguoiDaiDien, @email, @SDT)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@id_vungChanNuoi", idVung);
+                        cmd.Parameters.AddWithValue("@tenHo", name);
+                        cmd.Parameters.AddWithValue("@nguoiDaiDien", nguoiDaiDien);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@SDT", soDienthoai);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm hộ chăn nuôi: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getHoChanNuoi()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM hoChanNuoi";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy hộ chăn nuôi: " + e.Message);
                 return null;
             }
         }

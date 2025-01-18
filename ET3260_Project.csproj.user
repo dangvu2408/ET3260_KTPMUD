@@ -31,6 +31,9 @@
     <Compile Update="Views\addGiayChungNhan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\addHoChanNuoi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\addKhuTamGiu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +50,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\addTrieuChung.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\addVungChanNuoi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Home.xaml.cs">
@@ -93,6 +99,9 @@
     <Page Update="Views\addGiayChungNhan.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\addHoChanNuoi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\addKhuTamGiu.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -106,6 +115,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\addTrieuChung.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\addVungChanNuoi.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Home.xaml">

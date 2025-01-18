@@ -20,7 +20,7 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Label Content="Danh sách cơ sở chăn nuoi" Foreground="Black" Margin="10 0 10 0"/>
+            <Label Content="Danh sách cơ sở chăn nuôi" Foreground="Black" Margin="10 0 10 0"/>
             <ComboBox x:Name="comboBox2" Height="30" Margin="10 0 10 0">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
@@ -33,7 +33,7 @@
             <TextBox x:Name="date" Text="" Padding="5" Margin="10 0 10 0" />
 
             <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="10">
-                <Button Content="Thêm" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="addToChucChunngNhan_Btn"/>
+                <Button Content="Thêm" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="addGiayChungNhan_Btn"/>
             </Border>
 
         </StackPanel>

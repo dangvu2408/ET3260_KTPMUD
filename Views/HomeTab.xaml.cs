@@ -102,5 +102,23 @@ namespace ET3260_Project.Views
             addToChucChungNhan win13 = new addToChucChungNhan();
             win13.Show();
         }
+
+        private void GiayChungNhan(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addGiayChungNhan win14 = new addGiayChungNhan();
+            win14.Show();
+        }
+
+        private void HoChanNuoi(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addHoChanNuoi win15 = new addHoChanNuoi();
+            win15.Show();
+        }
+
+        private void VungChanNuoi(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addVungChanNuoi win16 = new addVungChanNuoi();
+            win16.Show();
+        }
     }
 }

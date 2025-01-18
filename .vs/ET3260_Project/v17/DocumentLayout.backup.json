@@ -3,88 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addtrieuchung.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addtrieuchung.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addhochannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addhochannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addtochucchungnhan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addtochucchungnhan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\hometab.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addtochucchungnhan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addtochucchungnhan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addvungchannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addvungchannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosogietmo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosogietmo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addhochannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addhochannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosogietmo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosogietmo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\adddailythuoc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\adddailythuoc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\adddailythuoc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\adddailythuoc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosochannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosochannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addloaidichbenh.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addloaidichbenh.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\models\\cosochannuoiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:models\\cosochannuoiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\models\\loaidichitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:models\\loaidichitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosochebien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosochebien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosochebien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosochebien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addloaidichbenh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addloaidichbenh.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:database\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addodich.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addodich.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosochannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosochannuoi.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\models\\vungchannuoiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:models\\vungchannuoiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addkhutamgiu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addkhutamgiu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\models\\chicucitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:models\\chicucitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addkhutamgiu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addkhutamgiu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addvungchannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addvungchannuoi.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addcosogietmo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addcosogietmo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|c:\\users\\admin\\source\\repos\\et3260_project\\views\\addodich.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECCC204-A3FF-421E-93E5-1C70A536F717}|ET3260_Project.csproj|solutionrelative:views\\addodich.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,134 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "addTrieuChung.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addTrieuChung.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addTrieuChung.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addTrieuChung.xaml.cs",
-              "RelativeToolTip": "Views\\addTrieuChung.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T05:36:13.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "addToChucChungNhan.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addToChucChungNhan.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addToChucChungNhan.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addToChucChungNhan.xaml.cs",
-              "RelativeToolTip": "Views\\addToChucChungNhan.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAzwDMAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T05:35:56.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "addToChucChungNhan.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addToChucChungNhan.xaml",
-              "RelativeDocumentMoniker": "Views\\addToChucChungNhan.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addToChucChungNhan.xaml",
-              "RelativeToolTip": "Views\\addToChucChungNhan.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-18T04:36:08.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "addCoSoGietMo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addCoSoGietMo.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml.cs",
-              "RelativeToolTip": "Views\\addCoSoGietMo.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAiwGQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T03:34:19.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "addCoSoGietMo.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml",
-              "RelativeDocumentMoniker": "Views\\addCoSoGietMo.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml",
-              "RelativeToolTip": "Views\\addCoSoGietMo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-18T03:33:05.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoaiDichItem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\LoaiDichItem.cs",
-              "RelativeDocumentMoniker": "Models\\LoaiDichItem.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\LoaiDichItem.cs",
-              "RelativeToolTip": "Models\\LoaiDichItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T02:39:28.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CoSoChanNuoiItem.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\CoSoChanNuoiItem.cs",
-              "RelativeDocumentMoniker": "Models\\CoSoChanNuoiItem.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\CoSoChanNuoiItem.cs",
-              "RelativeToolTip": "Models\\CoSoChanNuoiItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T02:39:19.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "addLoaiDichBenh.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addLoaiDichBenh.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addLoaiDichBenh.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addLoaiDichBenh.xaml.cs",
-              "RelativeToolTip": "Views\\addLoaiDichBenh.xaml.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T02:38:51.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "addCoSoChanNuoi.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoChanNuoi.xaml",
-              "RelativeDocumentMoniker": "Views\\addCoSoChanNuoi.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoChanNuoi.xaml",
-              "RelativeToolTip": "Views\\addCoSoChanNuoi.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T16:50:36.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeTab.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml",
-              "RelativeDocumentMoniker": "Views\\HomeTab.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml",
-              "RelativeToolTip": "Views\\HomeTab.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T11:35:16.876Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -230,125 +68,146 @@
               "RelativeDocumentMoniker": "Views\\HomeTab.xaml.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml.cs",
               "RelativeToolTip": "Views\\HomeTab.xaml.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAmwGcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHcAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T11:35:19.129Z",
+              "WhenOpened": "2025-01-18T15:19:23.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeTab.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml",
+              "RelativeDocumentMoniker": "Views\\HomeTab.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\HomeTab.xaml",
+              "RelativeToolTip": "Views\\HomeTab.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-18T15:19:05.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "addHoChanNuoi.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addHoChanNuoi.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\addHoChanNuoi.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addHoChanNuoi.xaml.cs*",
+              "RelativeToolTip": "Views\\addHoChanNuoi.xaml.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAABAwCsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:46:56.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "addHoChanNuoi.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addHoChanNuoi.xaml",
+              "RelativeDocumentMoniker": "Views\\addHoChanNuoi.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addHoChanNuoi.xaml",
+              "RelativeToolTip": "Views\\addHoChanNuoi.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-18T14:46:55.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "addDaiLyThuoc.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addDaiLyThuoc.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addDaiLyThuoc.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addDaiLyThuoc.xaml.cs",
-              "RelativeToolTip": "Views\\addDaiLyThuoc.xaml.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAUwHEAAAAJAAAAAAAAAA==",
+              "Title": "ChiCucItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\ChiCucItem.cs",
+              "RelativeDocumentMoniker": "Models\\ChiCucItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\ChiCucItem.cs",
+              "RelativeToolTip": "Models\\ChiCucItem.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T11:33:29.793Z",
+              "WhenOpened": "2025-01-18T14:45:27.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "addCoSoChanNuoi.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoChanNuoi.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addCoSoChanNuoi.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoChanNuoi.xaml.cs",
-              "RelativeToolTip": "Views\\addCoSoChanNuoi.xaml.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAmwG8AAAANAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "VungChanNuoiItem.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\VungChanNuoiItem.cs",
+              "RelativeDocumentMoniker": "Models\\VungChanNuoiItem.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Models\\VungChanNuoiItem.cs",
+              "RelativeToolTip": "Models\\VungChanNuoiItem.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:59:26.131Z"
+              "WhenOpened": "2025-01-18T14:45:18.8Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
+              "Title": "addODich.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addODich.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\addODich.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addODich.xaml.cs",
+              "RelativeToolTip": "Views\\addODich.xaml.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:19:37.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "addCoSoGietMo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\addCoSoGietMo.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoGietMo.xaml.cs",
+              "RelativeToolTip": "Views\\addCoSoGietMo.xaml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAUwHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:17:13.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "addVungChanNuoi.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addVungChanNuoi.xaml",
+              "RelativeDocumentMoniker": "Views\\addVungChanNuoi.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addVungChanNuoi.xaml",
+              "RelativeToolTip": "Views\\addVungChanNuoi.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-18T12:05:31.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "addVungChanNuoi.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addVungChanNuoi.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\addVungChanNuoi.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addVungChanNuoi.xaml.cs",
+              "RelativeToolTip": "Views\\addVungChanNuoi.xaml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T14:16:48.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "addODich.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addODich.xaml",
               "RelativeDocumentMoniker": "Views\\addODich.xaml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addODich.xaml",
               "RelativeToolTip": "Views\\addODich.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-18T02:30:22.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "addCoSoCheBien.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoCheBien.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addCoSoCheBien.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoCheBien.xaml.cs",
-              "RelativeToolTip": "Views\\addCoSoCheBien.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T02:32:21.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "addDaiLyThuoc.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addDaiLyThuoc.xaml",
-              "RelativeDocumentMoniker": "Views\\addDaiLyThuoc.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addDaiLyThuoc.xaml",
-              "RelativeToolTip": "Views\\addDaiLyThuoc.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T16:50:47.116Z",
+              "WhenOpened": "2025-01-18T12:07:01.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "addCoSoCheBien.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoCheBien.xaml",
-              "RelativeDocumentMoniker": "Views\\addCoSoCheBien.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addCoSoCheBien.xaml",
-              "RelativeToolTip": "Views\\addCoSoCheBien.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-18T02:30:02.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "addLoaiDichBenh.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addLoaiDichBenh.xaml",
-              "RelativeDocumentMoniker": "Views\\addLoaiDichBenh.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addLoaiDichBenh.xaml",
-              "RelativeToolTip": "Views\\addLoaiDichBenh.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-18T02:30:13.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "addKhuTamGiu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addKhuTamGiu.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\addKhuTamGiu.xaml.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addKhuTamGiu.xaml.cs",
-              "RelativeToolTip": "Views\\addKhuTamGiu.xaml.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwEYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T11:33:31.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "addKhuTamGiu.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addKhuTamGiu.xaml",
-              "RelativeDocumentMoniker": "Views\\addKhuTamGiu.xaml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Views\\addKhuTamGiu.xaml",
-              "RelativeToolTip": "Views\\addKhuTamGiu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-17T11:31:46.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs",
               "RelativeDocumentMoniker": "Database\\Database.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs*",
-              "RelativeToolTip": "Database\\Database.cs*",
-              "ViewState": "AgIAACgDAAAAAAAAAAAiwDADAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ET3260_Project\\Database\\Database.cs",
+              "RelativeToolTip": "Database\\Database.cs",
+              "ViewState": "AgIAAL8DAAAAAAAAAAAIwBAEAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T11:14:08.814Z",
               "EditorCaption": ""

@@ -82,7 +82,12 @@
                         <TextBlock Text="Cơ sở chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="DiemLuQuet">
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="VungChanNuoi">
+                        <Image Source="/Resources/Images/livestock.png" Width="40" Height="40"/>
+                        <TextBlock Text="Vùng chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="HoChanNuoi">
                         <Image Source="/Resources/Images/farm.png" Width="40" Height="40"/>
                         <TextBlock Text="Hộ chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
@@ -90,6 +95,11 @@
                     <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ToChucChungNhan">
                         <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
                         <TextBlock Text="Tổ chức chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="GiayChungNhan">
+                        <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
+                        <TextBlock Text="Giấy chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="CoSoCheBien">
