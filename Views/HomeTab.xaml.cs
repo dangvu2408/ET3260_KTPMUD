@@ -78,5 +78,17 @@ namespace ET3260_Project.Views
             addKhuTamGiu win9 = new addKhuTamGiu();
             win9.Show();
         }
+
+        private void CoSoChanNuoi(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addCoSoChanNuoi win10 = new addCoSoChanNuoi();
+            win10.Show();
+        }
+
+        private void CoSoCheBien(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addCoSoCheBien win11 = new addCoSoCheBien();
+            win11.Show();
+        }
     }
 }

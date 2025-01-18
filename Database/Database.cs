@@ -579,7 +579,7 @@ namespace ET3260_Project.Database
                 {
                     connector.Open();
 
-                    string sql = "INSERT INTO khuTamGiu  (tenKhuTamGiu, id_chiCuc, diaChiKTG, soDienThoaiKTG) VALUES (@Ten, @IDCC, @Diachi, @SDT)";
+                    string sql = "INSERT INTO khuTamGiu (tenKhuTamGiu, id_chiCuc, diaChiKTG, soDienThoaiKTG) VALUES (@Ten, @IDCC, @Diachi, @SDT)";
                     using (SqlCommand cmd = new SqlCommand(sql, connector))
                     {
                         cmd.Parameters.AddWithValue("@Ten", tenKhuTamGiu);
@@ -596,6 +596,130 @@ namespace ET3260_Project.Database
             catch (Exception e)
             {
                 MessageBox.Show("Lỗi thêm khu tạm giữ: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getKhuTamGiu()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM khuTamGiu";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy khu tạm giữ: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addCoSoChanNuoi(string tenCoSoCN, int idChiCuc, string diaChiCSCN, string soDienThoaiCSCN)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO coSoChanNuoi (tenCoSo, id_chiCuc, diaChiCoSo, soDienThoaiCS) VALUES (@Ten, @IDCC, @Diachi, @SDT)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Ten", tenCoSoCN);
+                        cmd.Parameters.AddWithValue("@Diachi", diaChiCSCN);
+                        cmd.Parameters.AddWithValue("@SDT", soDienThoaiCSCN);
+                        cmd.Parameters.AddWithValue("@IDCC", idChiCuc);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm cơ sở chăn nuôi: " + e.Message);
+                return false;
+            }
+        }
+
+        public DataTable getCoSoChanNuoi()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM coSoChanNuoi";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy cơ sở chăn nuôi: " + e.Message);
+                return null;
+            }
+        }
+
+        public bool addCoSoCheBien(string tenCoSoCB, List<int> listCoSoChanNuoiIds, string diaChiCSCB, string soDienThoaiCSCB)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "INSERT INTO coSoCheBien (tenCSCB, diaChiCS, soDienThoaiCS) OUTPUT INSERTED.id_csCheBien VALUES (@tenCSCB, @diaChiCS, @soDienThoaiCS)";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@tenCSCB", tenCoSoCB);
+                        cmd.Parameters.AddWithValue("@diaChiCS", diaChiCSCB);
+                        cmd.Parameters.AddWithValue("@soDienThoaiCS", diaChiCSCB);
+
+                        int idCoSoCheBien = (int)cmd.ExecuteScalar();
+
+                        foreach (var coSoChanNuoiId in listCoSoChanNuoiIds)
+                        {
+                            string insertTrieuChungQuery = "INSERT INTO coSoChanNuoi_CoSoCheBien (id_csChanNuoi, id_csCheBien) VALUES (@id_csChanNuoi, @id_csCheBien)";
+                            using (SqlCommand insertCmd = new SqlCommand(insertTrieuChungQuery, connector))
+                            {
+                                insertCmd.Parameters.AddWithValue("@id_csCheBien", idCoSoCheBien);
+                                insertCmd.Parameters.AddWithValue("@id_csChanNuoi", coSoChanNuoiId);
+                                insertCmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi thêm cơ sở chế biến: " + e.Message);
                 return false;
             }
         }
