@@ -47,8 +47,10 @@ namespace ET3260_Project
             {
                 string role = database.getUserRole(username);
                 string fullname = database.GetUserFullName(username);
-
-                User current = new User { email = username, Role = role, Fullname = fullname };
+                string pass = database.GetUserPassword(username);
+                string email = database.GetUserEmail(username);
+                string userID = database.GetUserID(username);
+                User current = new User { email = username, Role = role, Fullname = fullname, Password = pass, ID = userID };
                 Home homeWin = new Home(current);
                 homeWin.Show();
             }

@@ -19,7 +19,7 @@
                     </StackPanel>
                 </StackPanel>
                 <Separator Height="20" Background="Transparent"/>
-                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="CapNhatNguoiDung">
                     <Image Source="/Resources/Images/edit.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
                     <TextBlock Text="Chỉnh sửa thông tin cá nhân" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>
@@ -34,7 +34,7 @@
                     <TextBlock Text="Truy vấn người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
+                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="ThemNguoiDung">
                     <Image Source="/Resources/Images/plus-square.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
                     <TextBlock Text="Thêm người dùng mới" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
                 </StackPanel>

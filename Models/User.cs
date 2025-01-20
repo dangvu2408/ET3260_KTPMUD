@@ -11,5 +11,7 @@ namespace ET3260_Project.Models
         public string Fullname { get; set; }
         public string Role { get; set; }
         public string email { get; set; }
+        public string Password { get; set; }
+        public string ID { get; set; }
     }
 }

@@ -44,5 +44,19 @@ namespace ET3260_Project.Views
                 Role1Display3rd.Visibility = Visibility.Collapsed;
             }
         }
+
+        private void ThemNguoiDung(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            addNguoiDung win1 = new addNguoiDung();
+            win1.Show();
+        }
+
+        private void CapNhatNguoiDung(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            updateThongTinNguoiDung win2 = new updateThongTinNguoiDung(currentUser);
+            win2.Show();
+        }
     }
+
+    
 }

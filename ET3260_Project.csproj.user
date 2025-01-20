@@ -43,6 +43,9 @@
     <Compile Update="Views\addLoaiDichBenh.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\addNguoiDung.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\addODich.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -68,6 +71,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\SigninWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\updateThongTinNguoiDung.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -108,6 +114,9 @@
     <Page Update="Views\addLoaiDichBenh.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\addNguoiDung.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\addODich.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -133,6 +142,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SigninWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\updateThongTinNguoiDung.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -38,13 +38,17 @@
                         <ComboBoxItem Content="Tra cứu thông tin vùng chăn nuôi an toàn dịch bệnh" FontSize="16"/>
                     </ComboBox>
 
-                    <Button Content="Tra cứu" FontSize="16" Width="150" Height="30" Grid.Column="1"  />
+                    <Button Content="Tra cứu" FontSize="16" Width="150" Height="30" Grid.Column="1" Click="Query_Btn" />
 
                 </Grid>
             </Border>
-            <DataGrid x:Name="GridViewQuery" Height="250" AutoGenerateColumns="True" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0, 50, 0, 0" RowHeight="25">
-
-            </DataGrid>
+            <DataGrid x:Name="GridViewQuery" 
+                  Height="250" 
+                  AutoGenerateColumns="True" 
+                  VerticalAlignment="Top" 
+                  HorizontalAlignment="Stretch" 
+                  Margin="10,100,10,0" 
+                  RowHeight="25" />
         </Grid>
     </ScrollViewer>
     

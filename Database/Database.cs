@@ -144,6 +144,87 @@ namespace ET3260_Project.Database
             }
         }
 
+        public string GetUserEmail(string username)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT email FROM [user] WHERE email = @Username";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+                return result != null ? result.ToString() : string.Empty;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy email người dùng: " + e.Message);
+                return string.Empty;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
+        public string GetUserPassword(string username)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT password FROM [user] WHERE email = @Username";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+                return result != null ? result.ToString() : string.Empty;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy mật khẩu người dùng: " + e.Message);
+                return string.Empty;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
+        public string GetUserID(string username)
+        {
+            try
+            {
+                if (connect.State == ConnectionState.Closed)
+                {
+                    connect.Open();
+                }
+
+                sql = "SELECT ID FROM [user] WHERE email = @Username";
+                command = new SqlCommand(sql, connect);
+                command.Parameters.AddWithValue("@Username", username);
+
+                object result = command.ExecuteScalar();
+                return result != null ? result.ToString() : string.Empty;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy ID người dùng: " + e.Message);
+                return string.Empty;
+            }
+            finally
+            {
+                connect.Close();
+            }
+        }
+
         public DataTable getUser()
         {
             try
@@ -199,6 +280,33 @@ namespace ET3260_Project.Database
             }
         }
 
+        public DataTable getDiemLuQuet()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM diemLuQuet";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy điểm lũ quét: " + e.Message);
+                return null;
+            }
+        }
+
         public bool addDiemTruotLo(string tenDiem, string diaDiem, string date)
         {
             try
@@ -224,6 +332,33 @@ namespace ET3260_Project.Database
             {
                 MessageBox.Show("Lỗi thêm điểm lũ quét: " + e.Message);
                 return false;
+            }
+        }
+
+        public DataTable getDiemTruotLo()
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "SELECT * FROM diemTruotLo";
+                    using (SqlCommand command = new SqlCommand(sql, connector))
+                    {
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            return dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi lấy điểm trượt lở: " + e.Message);
+                return null;
             }
         }
 
@@ -1040,6 +1175,35 @@ namespace ET3260_Project.Database
             {
                 MessageBox.Show("Lỗi lấy hộ chăn nuôi: " + e.Message);
                 return null;
+            }
+        }
+
+        public bool updateUser(string id, string email, int role, string fullname)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "UPDATE [user] SET email = @Email, fullname = @Fullname, role = @Role WHERE id = @Id";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Role", role);
+                        cmd.Parameters.AddWithValue("@Fullname", fullname);
+                        cmd.Parameters.AddWithValue("@Id", id);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi cập nhật thông tin người dùng: " + e.Message);
+                return false;
             }
         }
     }
