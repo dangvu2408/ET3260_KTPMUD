@@ -9,105 +9,358 @@
              Background="White">
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
         <Grid>
-            <StackPanel Orientation="Vertical">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <!-- Cột 1 -->
+                <ColumnDefinition Width="*" />
+                <!-- Cột 2 -->
+                <ColumnDefinition Width="*" />
+                <!-- Cột 3 -->
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10">
                 <TextBlock Text="Trang chủ hệ thống" FontSize="20" FontWeight="Black" Foreground="Black" Margin="10"/>
                 <TextBlock Text="Thiên tai" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
-                <StackPanel Orientation="Vertical" >
-                    <StackPanel Orientation="Horizontal" Margin="10" MouseLeftButtonDown="DiemTruotLo">
+
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="DiemTruotLo">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal" Margin="10" >
                         <Image Source="/Resources/Images/satlo.png" Width="40" Height="40"/>
                         <TextBlock Text="Thêm điểm trượt lở" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
+                </Border>
 
-                    <StackPanel Orientation="Horizontal" Margin="10" MouseLeftButtonDown="DiemLuQuet">
+                <TextBlock Text="Dịch bệnh" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="LoaiDichBenh">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <Image Source="/Resources/Images/virus.png" Width="40" Height="40"/>
+                        <TextBlock Text="Loại dịch bệnh" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center" />
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="TiemPhong">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/injection.png" Width="40" Height="40"/>
+                        <TextBlock Text="Tiêm phòng" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="Chăn nuôi" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="ChiCuc">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/clinic.png" Width="40" Height="40"/>
+                        <TextBlock Text="Chi cục thú y" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="CoSoGietMo">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/meat-grinder.png" Width="40" Height="40"/>
+                        <TextBlock Text="Cơ sở giết mổ" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="HoChanNuoi">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/farm.png" Width="40" Height="40"/>
+                        <TextBlock Text="Hộ chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="CoSoCheBien">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/crushing.png" Width="40" Height="40"/>
+                        <TextBlock Text="Cơ sở chế biến" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+                <TextBlock Text=" " FontSize="20" FontWeight="Black" Foreground="Black" Margin="10"/>
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="DiemLuQuet">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal" Margin="10" >
                         <Image Source="/Resources/Images/flood.png" Width="40" Height="40"/>
                         <TextBlock Text="Điểm lũ quét" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center" />
                     </StackPanel>
+                </Border>
 
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="TrieuChung">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <Image Source="/Resources/Images/pharmacy.png" Width="40" Height="40"/>
+                        <TextBlock Text="Triệu chứng lâm sàng" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <StackPanel Height="50" Margin="10">
+                </StackPanel>
+
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="DaiLyThuoc">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/medicine.png" Width="40" Height="40"/>
+                        <TextBlock Text="Đại lý bán thuốc" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="CoSoChanNuoi">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/livestock.png" Width="40" Height="40"/>
+                        <TextBlock Text="Cơ sở chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="ToChucChungNhan">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
+                        <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
+                        <TextBlock Text="Tổ chức chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Margin="10">
+                <TextBlock Text=" " FontSize="20" FontWeight="Black" Foreground="Black" Margin="10"/>
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
+
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
                     <StackPanel Orientation="Horizontal" Margin="10">
                         <Image Source="/Resources/Images/clipboard.png" Width="30" Height="40"/>
                         <TextBlock Text="Báo cáo thiên tai" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                </Border>
 
-                <TextBlock Text="Dịch bệnh" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
-                <StackPanel Orientation="Vertical" >
-                    <StackPanel Orientation="Horizontal" Margin="10" MouseLeftButtonDown="LoaiDichBenh">
-                        <Image Source="/Resources/Images/virus.png" Width="40" Height="40"/>
-                        <TextBlock Text="Loại dịch bệnh" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center" />
-                    </StackPanel>
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
 
-                    <StackPanel Orientation="Horizontal" Margin="10" MouseLeftButtonDown="TrieuChung">
-                        <Image Source="/Resources/Images/pharmacy.png" Width="40" Height="40"/>
-                        <TextBlock Text="Triệu chứng lâm sàng" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ODich">
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="ODich">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
                         <Image Source="/Resources/Images/contagion.png" Width="40" Height="40"/>
                         <TextBlock Text="Ổ dịch" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="TiemPhong">
-                        <Image Source="/Resources/Images/injection.png" Width="40" Height="40"/>
-                        <TextBlock Text="Tiêm phòng" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
+                </Border>
+                <StackPanel Height="50" Margin="10">
                 </StackPanel>
 
-                <TextBlock Text="Chăn nuôi" FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
-                <StackPanel Orientation="Vertical" >
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ChiCuc">
-                        <Image Source="/Resources/Images/clinic.png" Width="40" Height="40"/>
-                        <TextBlock Text="Chi cục thú y" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
+                <TextBlock Text=" " FontSize="18" FontWeight="Bold" Foreground="Black" Margin="10"/>
 
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="DaiLyThuoc">
-                        <Image Source="/Resources/Images/medicine.png" Width="40" Height="40"/>
-                        <TextBlock Text="Đại lý bán thuốc" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                    <Separator Width="20" Background="Transparent"/>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="KhuTamGiu">
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="KhuTamGiu">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
                         <Image Source="/Resources/Images/smart.png" Width="40" Height="40"/>
                         <TextBlock Text="Khu tạm giữ, tiêu hủy" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="CoSoGietMo">
-                        <Image Source="/Resources/Images/meat-grinder.png" Width="40" Height="40"/>
-                        <TextBlock Text="Cơ sở giết mổ" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </StackPanel>
-
-                <StackPanel Orientation="Vertical" >
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="CoSoChanNuoi">
-                        <Image Source="/Resources/Images/livestock.png" Width="40" Height="40"/>
-                        <TextBlock Text="Cơ sở chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="VungChanNuoi">
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="VungChanNuoi">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
                         <Image Source="/Resources/Images/livestock.png" Width="40" Height="40"/>
                         <TextBlock Text="Vùng chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="HoChanNuoi">
-                        <Image Source="/Resources/Images/farm.png" Width="40" Height="40"/>
-                        <TextBlock Text="Hộ chăn nuôi" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="ToChucChungNhan">
-                        <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
-                        <TextBlock Text="Tổ chức chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="GiayChungNhan">
+                </Border>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="5" MouseLeftButtonDown="GiayChungNhan">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="#DDDDDD"/>
+                            <!-- Nền mặc định -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#BBBBBB"/>
+                                    <!-- Nền khi hover -->
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal"  Margin="10" >
                         <Image Source="/Resources/Images/regulation.png" Width="40" Height="40"/>
                         <TextBlock Text="Giấy chứng nhận" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
                     </StackPanel>
-
-                    <StackPanel Orientation="Horizontal"  Margin="10" MouseLeftButtonDown="CoSoCheBien">
-                        <Image Source="/Resources/Images/crushing.png" Width="40" Height="40"/>
-                        <TextBlock Text="Cơ sở chế biến" FontSize="16" Margin="10, 0, 0, 0" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </StackPanel>
+                </Border>
             </StackPanel>
+            
         </Grid>
     </ScrollViewer>
              
