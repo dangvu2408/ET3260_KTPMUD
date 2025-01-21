@@ -73,3 +73,7 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addNgu
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\addNguoiDung.baml
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\updateThongTinNguoiDung.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\updateThongTinNguoiDung.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\updatePassword.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\updatePassword.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\displayListofUser.g.cs
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\displayListofUser.baml

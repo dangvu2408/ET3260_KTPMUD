@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Admin\source\repos\ET3260_Project\App.xaml
-24631650969
+26740157673
 
-381255736235
+401705420678
 199-66191411
-MainWindow.xaml;Views\addChiCucThuY.xaml;Views\addCoSoChanNuoi.xaml;Views\addCoSoCheBien.xaml;Views\addCoSoGietMo.xaml;Views\addDaiLyThuoc.xaml;Views\addDiemLuQuet.xaml;Views\addDiemTruotLo.xaml;Views\addGiayChungNhan.xaml;Views\addHoChanNuoi.xaml;Views\addKhuTamGiu.xaml;Views\addLichTiemPhong.xaml;Views\addLoaiDichBenh.xaml;Views\addNguoiDung.xaml;Views\addODich.xaml;Views\addToChucChungNhan.xaml;Views\addTrieuChung.xaml;Views\addVungChanNuoi.xaml;Views\Home.xaml;Views\HomeTab.xaml;Views\ProfileTab.xaml;Views\QueryTab.xaml;Views\SigninWindow.xaml;Views\updateThongTinNguoiDung.xaml;
+MainWindow.xaml;Views\addChiCucThuY.xaml;Views\addCoSoChanNuoi.xaml;Views\addCoSoCheBien.xaml;Views\addCoSoGietMo.xaml;Views\addDaiLyThuoc.xaml;Views\addDiemLuQuet.xaml;Views\addDiemTruotLo.xaml;Views\addGiayChungNhan.xaml;Views\addHoChanNuoi.xaml;Views\addKhuTamGiu.xaml;Views\addLichTiemPhong.xaml;Views\addLoaiDichBenh.xaml;Views\addNguoiDung.xaml;Views\addODich.xaml;Views\addToChucChungNhan.xaml;Views\addTrieuChung.xaml;Views\addVungChanNuoi.xaml;Views\displayListofUser.xaml;Views\Home.xaml;Views\HomeTab.xaml;Views\ProfileTab.xaml;Views\QueryTab.xaml;Views\SigninWindow.xaml;Views\updatePassword.xaml;Views\updateThongTinNguoiDung.xaml;
 
 False
 

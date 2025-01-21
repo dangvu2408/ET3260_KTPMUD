@@ -56,6 +56,18 @@ namespace ET3260_Project.Views
             updateThongTinNguoiDung win2 = new updateThongTinNguoiDung(currentUser);
             win2.Show();
         }
+
+        private void CapNhatMatKhau(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            updatePassword win3 = new updatePassword(currentUser);
+            win3.Show();
+        }
+
+        private void QueryUser(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            displayListofUser win4 = new displayListofUser();
+            win4.Show();
+        }
     }
 
     

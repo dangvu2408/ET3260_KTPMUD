@@ -1206,5 +1206,58 @@ namespace ET3260_Project.Database
                 return false;
             }
         }
+
+        public bool updatePassword(string id, string newPass)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "UPDATE [user] SET password = @Password WHERE id = @Id";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Password", newPass);
+                        cmd.Parameters.AddWithValue("@Id", id);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi cập nhật mật khẩu: " + e.Message);
+                return false;
+            }
+        }
+
+        public bool deleteUser(string id)
+        {
+            try
+            {
+                using (SqlConnection connector = new SqlConnection(databaseConnector))
+                {
+                    connector.Open();
+
+                    string sql = "DELETE FROM [user] WHERE id = @Id";
+                    using (SqlCommand cmd = new SqlCommand(sql, connector))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", id);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Lỗi xóa người dùng: " + e.Message);
+                return false;
+            }
+        }
     }
 }

@@ -58,6 +58,9 @@
     <Compile Update="Views\addVungChanNuoi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\displayListofUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -71,6 +74,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\SigninWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\updatePassword.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\updateThongTinNguoiDung.xaml.cs">
@@ -129,6 +135,9 @@
     <Page Update="Views\addVungChanNuoi.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\displayListofUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Home.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -142,6 +151,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SigninWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\updatePassword.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\updateThongTinNguoiDung.xaml">
