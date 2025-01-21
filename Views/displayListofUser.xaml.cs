@@ -28,12 +28,45 @@ namespace ET3260_Project.Views
 
             DataTable dataTable = new DataTable();
             dataTable = database.getUser();
-            GridViewQuery.ItemsSource = dataTable.DefaultView;
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                dataTable = AddRoleDescriptions(dataTable);
+                dataGrid.ItemsSource = dataTable.DefaultView;
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu người dùng!");
+            }
         }
 
         private void CloseBtn(object sender, RoutedEventArgs e)
         {
             this.Hide();
         }
+
+        private DataTable AddRoleDescriptions(DataTable dataTable)
+        {
+            dataTable.Columns.Add("role_description", typeof(string));
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                int roleValue = Convert.ToInt32(row["role"]);
+                switch (roleValue)
+                {
+                    case 1:
+                        row["role_description"] = "Quản trị";
+                        break;
+                    case 2:
+                        row["role_description"] = "Cán bộ nghiệp vụ";
+                        break;
+                    default:
+                        row["role_description"] = "Chưa xác định";
+                        break;
+                }
+            }
+
+            return dataTable;
+        }
+
     }
 }

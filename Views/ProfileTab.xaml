@@ -19,30 +19,41 @@
                     </StackPanel>
                 </StackPanel>
                 <Separator Height="20" Background="Transparent"/>
-                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="CapNhatNguoiDung">
-                    <Image Source="/Resources/Images/edit.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                    <TextBlock Text="Chỉnh sửa thông tin cá nhân" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                </StackPanel>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="10" MouseLeftButtonDown="CapNhatNguoiDung">
+                    <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="5" >
+                        <Image Source="/Resources/Images/edit.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Chỉnh sửa thông tin cá nhân" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
 
-                <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="CapNhatMatKhau">
-                    <Image Source="/Resources/Images/reset-password.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                    <TextBlock Text="Đổi mật khẩu" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                </StackPanel>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="10" MouseLeftButtonDown="CapNhatMatKhau">
+                    <StackPanel Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="5" >
+                        <Image Source="/Resources/Images/reset-password.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Đổi mật khẩu" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
 
-                <StackPanel x:Name="Role1Display1st" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="QueryUser">
-                    <Image Source="/Resources/Images/database.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                    <TextBlock Text="Truy vấn người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                </StackPanel>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="10" MouseLeftButtonDown="QueryUser">
+                    <StackPanel x:Name="Role1Display1st" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="5" >
+                        <Image Source="/Resources/Images/database.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Truy vấn người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
 
-                <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10" MouseLeftButtonDown="ThemNguoiDung">
-                    <Image Source="/Resources/Images/plus-square.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                    <TextBlock Text="Thêm người dùng mới" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                </StackPanel>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="10" MouseLeftButtonDown="ThemNguoiDung">
+                    <StackPanel x:Name="Role1Display2nd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="5" >
+                        <Image Source="/Resources/Images/plus-square.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Thêm người dùng mới" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
 
-                <StackPanel x:Name="Role1Display3rd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="10">
-                    <Image Source="/Resources/Images/edit-3.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                    <TextBlock Text="Chỉnh sửa thông tin người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
-                </StackPanel>
+                <Border Background="#DDDDDD" CornerRadius="10" Margin="10" MouseLeftButtonDown="ThemNguoiDung">
+                    <StackPanel x:Name="Role1Display3rd" Orientation="Horizontal" Height="35" Background="#DDDDDD" Margin="5">
+                        <Image Source="/Resources/Images/edit-3.png" Width="25" Height="25" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                        <TextBlock Text="Chỉnh sửa thông tin người dùng" FontSize="16" Margin="10 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                    
             </StackPanel>
         </Grid>
     </ScrollViewer>

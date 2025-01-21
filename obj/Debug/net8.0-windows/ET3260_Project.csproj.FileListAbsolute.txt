@@ -77,3 +77,4 @@ C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\update
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\updatePassword.baml
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\displayListofUser.g.cs
 C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\Views\displayListofUser.baml
+C:\Users\Admin\source\repos\ET3260_Project\obj\Debug\net8.0-windows\App.baml

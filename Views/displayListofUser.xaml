@@ -5,17 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ET3260_Project.Views"
         mc:Ignorable="d"
-        Title="Truy vấn người dùng" Height="375" Width="500">
+        Title="Truy vấn người dùng" Height="375" Width="750">
     <Grid>
         <StackPanel>
             <Label Content="Danh sách người dùng" Foreground="Black" Margin="10 0 10 0"/>
-            <DataGrid x:Name="GridViewQuery" 
-                  Height="250" 
-                  AutoGenerateColumns="True" 
-                  VerticalAlignment="Top" 
-                  HorizontalAlignment="Stretch" 
-                  Margin="10" 
-                  RowHeight="25" />
+
+            <DataGrid AutoGenerateColumns="False" 
+          HeadersVisibility="Column"
+          CanUserAddRows="False"
+          RowHeight="40"
+          AlternationCount="2"
+          AlternatingRowBackground="#F3F4F6"
+          BorderThickness="0"
+          GridLinesVisibility="Horizontal"
+          Margin="10"
+          x:Name="dataGrid">
+                <DataGrid.Columns>
+                    <!-- Cột ID -->
+                    <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="50" />
+
+                    <!-- Cột Email -->
+                    <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="200" />
+
+                    <!-- Cột Password -->
+                    <DataGridTextColumn Header="Mật khẩu" Binding="{Binding password}" Width="150" />
+
+                    <!-- Cột FullName -->
+                    <DataGridTextColumn Header="Tên đầy đủ" Binding="{Binding fullname}" Width="200" />
+
+                    <!-- Cột Role -->
+                    <DataGridTextColumn Header="Phân quyền" Binding="{Binding role_description}" Width="120" />
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+
+
+
             <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="10">
                 <Button Content="Đóng" Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="CloseBtn"/>
             </Border>
