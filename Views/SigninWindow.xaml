@@ -5,40 +5,137 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ET3260_Project.Views"
         mc:Ignorable="d"
-        Title="Quản lý dịch bệnh và thiên tai - Đăng kí" Height="450" Width="800">
+        Title="Quản lý dịch bệnh và thiên tai - Đăng kí" Height="450" Width="800"
+        Icon="/Resources/Images/app_icon_1024.png">
     <Grid>
-        <Image Source="/Resources/Images/background.jpg" Stretch="Fill" />
-        <Border Width="250" Background="#FF257CA9" 
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Padding="20"
-            CornerRadius="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
 
-            <StackPanel>
-                <TextBlock Text="ĐĂNG KÍ HỆ THỐNG" FontSize="18" FontWeight="Bold" Foreground="White"/>
-                <Label Content="Email" Foreground="White" />
-                <TextBox x:Name="em" Text="" Padding="5" />
-                <Label Content="Tên đầy đủ người dùng" Foreground="White" />
-                <TextBox x:Name="un" Text="" Padding="5" />
-                <Label Content="Password" Foreground="#FFF" />
-                <PasswordBox x:Name="ps" Password="" Padding="5" />
-                <Label Content="Vai trò" Foreground="#FFF" />
-                <ComboBox Name="UserDropdown"
-                  Height="30"
-                  IsEditable="True"
-                  Margin="0,0,0,0"
-                  VerticalAlignment="Top">
-                    <ComboBoxItem Content="Quản trị" />
-                    <ComboBoxItem Content="Cán bộ nghiệp vụ" />
-                </ComboBox>
-                
-                
-                <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="0 10 0 0">
-                    <Button Content="ĐĂNG KÍ"  Height="25" Background="Transparent" BorderThickness="0" Foreground="White" Click="RegisterClick"/>
+        <Grid Grid.Column="0" >
+            <StackPanel Margin="10" VerticalAlignment="Center">
+                <TextBlock Text="ĐĂNG KÍ HỆ THỐNG" FontSize="24" FontWeight="Black" Foreground="Black" FontFamily="/Resources/Fonts/#SF Pro Display Black" HorizontalAlignment="Center" Margin="0 10 0 20"/>
+                <Border Background="#F5F4FF" CornerRadius="15" Padding="10" Height="50" Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="/Resources/Images/user_black.png" VerticalAlignment="Center" Height="20" />
+
+                        <TextBox x:Name="em" 
+                             Grid.Column="1" 
+                             Background="Transparent" 
+                             BorderThickness="0" 
+                             VerticalAlignment="Center" 
+                             FontSize="16" 
+                             Foreground="#333333" 
+                             Loaded="TextBox_Loaded"
+                             FontFamily="/Resources/Fonts/#SF Pro Display Regular"/>
+                    </Grid>
                 </Border>
-                
+
+                <Border Background="#F5F4FF" CornerRadius="15" Padding="10" Height="50" Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="/Resources/Images/fullname_black.png" VerticalAlignment="Center" Height="20" />
+
+                        <TextBox x:Name="un" 
+                             Grid.Column="1" 
+                             Background="Transparent" 
+                             BorderThickness="0" 
+                             VerticalAlignment="Bottom" 
+                             FontSize="16" 
+                             Foreground="#333333" 
+                             Loaded="TextBox_Loaded1"
+                             FontFamily="/Resources/Fonts/#SF Pro Display Regular" Margin="0,0,0,5"/>
+                    </Grid>
+                </Border>
+
+                <Border Background="#F5F4FF" CornerRadius="15" Padding="10" Height="50" Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="/Resources/Images/lock_black.png" VerticalAlignment="Center" Height="20" />
+
+                        <PasswordBox x:Name="ps" 
+                             Grid.Column="1" 
+                             Background="Transparent" 
+                             BorderThickness="0" 
+                             VerticalAlignment="Center" 
+                             FontSize="16" 
+                             Foreground="#333333" 
+                             Loaded="PasswordBox_Loaded"
+                             FontFamily="Resources/Fonts/#SF Pro Display Regular"/>
+                    </Grid>
+                </Border>
+
+                <Border Background="#F5F4FF" CornerRadius="15" Padding="10" Height="50" Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Icon bên trái -->
+                        <Image Source="/Resources/Images/role_black.png" VerticalAlignment="Center" Height="20" />
+
+                        <!-- ComboBox -->
+                        <ComboBox Name="UserDropdown"
+                              Grid.Column="1"
+                              Background="Transparent"
+                             
+                              BorderThickness="0"
+                              VerticalAlignment="Center"
+                              FontSize="16"
+                              Foreground="#333333"
+                              FontFamily="/Resources/Fonts/#SF Pro Display Regular"
+                              IsEditable="True"
+                              Margin="5,0,0,0">
+                            <ComboBoxItem Content="Quản trị" />
+                            <ComboBoxItem Content="Cán bộ nghiệp vụ" />
+                        </ComboBox>
+                    </Grid>
+                </Border>
+
+                <Border CornerRadius="5" Background="Blue"  Padding="2" Margin="0 10 0 0" Width="150">
+                    <Button Content="ĐĂNG KÍ" Foreground="White" FontSize="16" Height="25" Background="Transparent" BorderThickness="0" FontFamily="/Resources/Fonts/#SF Pro Display Bold" Click="RegisterClick"/>
+                </Border>
             </StackPanel>
-        </Border>
+        </Grid>
+
+        <Grid Grid.Column="1" >
+            <Image Source="/Resources/Images/flash_flood_facts.jpeg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Grid>
+                <Border Grid.Column="0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="Transparent" Offset="0" />
+                            <GradientStop Color="Black" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+
+                <!-- Văn bản -->
+                <StackPanel Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20">
+                    <TextBlock Text="HỆ THỐNG QUẢN LÝ" FontSize="24" Foreground="White" FontWeight="Bold" FontFamily="/Resources/Fonts/#SF Pro Display Black" Margin="0, 10"/>
+                    <TextBlock Text="DỊCH BỆNH VÀ THIÊN TAI" FontSize="20" Foreground="White" FontWeight="Regular" FontFamily="/Resources/Fonts/#SF Pro Display Bold" />
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+
+
 
 
     </Grid>

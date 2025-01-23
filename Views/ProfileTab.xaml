@@ -7,10 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="white">
-    <ScrollViewer>
+    <ScrollViewer Background="#F5F5F5">
         <Grid>
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="Quản lý tài khoản" FontSize="20" FontWeight="Black" Foreground="Black" Margin="10"/>
+                <TextBlock Text="Quản lý tài khoản" FontSize="24" FontWeight="Bold" Foreground="#333333" Margin="10"/>
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Resources/Images/user-avatar.png" Width="50" Height="50" Margin="10 0 0 0"/>
                     <StackPanel Orientation="Vertical" Height="50">

@@ -60,6 +60,26 @@ namespace ET3260_Project
             }
             
         }
+
+        private void TextBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                // Đặt Placeholder cho TextBox
+                PlaceholderBehavior.SetPlaceholder(textBox, "Nhập email");
+            }
+        }
+
+        private void PasswordBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as PasswordBox;
+            if (textBox != null)
+            {
+                // Đặt Placeholder cho TextBox
+                PlaceholderBehavior.SetPlaceholder(textBox, "Nhập mật khẩu");
+            }
+        }
     }
 }
 

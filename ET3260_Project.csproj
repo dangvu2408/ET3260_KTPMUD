@@ -13,6 +13,13 @@
 	</ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Fonts\SF-Pro-Display-Black.otf" />
+    <None Remove="Resources\Fonts\sfpro_bold.otf" />
+    <None Remove="Resources\Fonts\sfpro_regular.otf" />
+    <None Remove="Resources\Fonts\sfpro_regular_italic.otf" />
+    <None Remove="Resources\Fonts\sfpro_semibold.otf" />
+    <None Remove="Resources\Images\app_banner_1.jpg" />
+    <None Remove="Resources\Images\app_icon_1024.png" />
     <None Remove="Resources\Images\background.jpg" />
     <None Remove="Resources\Images\clinic.png" />
     <None Remove="Resources\Images\clipboard.png" />
@@ -22,11 +29,14 @@
     <None Remove="Resources\Images\edit-3.png" />
     <None Remove="Resources\Images\edit.png" />
     <None Remove="Resources\Images\farm.png" />
+    <None Remove="Resources\Images\flash_flood_facts.jpeg" />
     <None Remove="Resources\Images\flood.png" />
+    <None Remove="Resources\Images\fullname_black.png" />
     <None Remove="Resources\Images\home_icon.png" />
     <None Remove="Resources\Images\injection.png" />
     <None Remove="Resources\Images\landslide.png" />
     <None Remove="Resources\Images\livestock.png" />
+    <None Remove="Resources\Images\lock_black.png" />
     <None Remove="Resources\Images\log_out.png" />
     <None Remove="Resources\Images\meat-grinder.png" />
     <None Remove="Resources\Images\medicine.png" />
@@ -35,15 +45,24 @@
     <None Remove="Resources\Images\plus-square.png" />
     <None Remove="Resources\Images\regulation.png" />
     <None Remove="Resources\Images\reset-password.png" />
+    <None Remove="Resources\Images\role_black.png" />
     <None Remove="Resources\Images\satlo.png" />
     <None Remove="Resources\Images\server_icon.png" />
     <None Remove="Resources\Images\smart.png" />
     <None Remove="Resources\Images\user-avatar.png" />
+    <None Remove="Resources\Images\user_black.png" />
     <None Remove="Resources\Images\user_icon.png" />
     <None Remove="Resources\Images\virus.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Fonts\SF-Pro-Display-Black.otf" />
+    <Resource Include="Resources\Fonts\sfpro_bold.otf" />
+    <Resource Include="Resources\Fonts\sfpro_regular.otf" />
+    <Resource Include="Resources\Fonts\sfpro_regular_italic.otf" />
+    <Resource Include="Resources\Fonts\sfpro_semibold.otf" />
+    <Resource Include="Resources\Images\app_banner_1.jpg" />
+    <Resource Include="Resources\Images\app_icon_1024.png" />
     <Resource Include="Resources\Images\background.jpg" />
     <Resource Include="Resources\Images\clinic.png" />
     <Resource Include="Resources\Images\clipboard.png" />
@@ -53,11 +72,14 @@
     <Resource Include="Resources\Images\edit-3.png" />
     <Resource Include="Resources\Images\edit.png" />
     <Resource Include="Resources\Images\farm.png" />
+    <Resource Include="Resources\Images\flash_flood_facts.jpeg" />
     <Resource Include="Resources\Images\flood.png" />
+    <Resource Include="Resources\Images\fullname_black.png" />
     <Resource Include="Resources\Images\home_icon.png" />
     <Resource Include="Resources\Images\injection.png" />
     <Resource Include="Resources\Images\landslide.png" />
     <Resource Include="Resources\Images\livestock.png" />
+    <Resource Include="Resources\Images\lock_black.png" />
     <Resource Include="Resources\Images\log_out.png" />
     <Resource Include="Resources\Images\meat-grinder.png" />
     <Resource Include="Resources\Images\medicine.png" />
@@ -66,10 +88,12 @@
     <Resource Include="Resources\Images\plus-square.png" />
     <Resource Include="Resources\Images\regulation.png" />
     <Resource Include="Resources\Images\reset-password.png" />
+    <Resource Include="Resources\Images\role_black.png" />
     <Resource Include="Resources\Images\satlo.png" />
     <Resource Include="Resources\Images\server_icon.png" />
     <Resource Include="Resources\Images\smart.png" />
     <Resource Include="Resources\Images\user-avatar.png" />
+    <Resource Include="Resources\Images\user_black.png" />
     <Resource Include="Resources\Images\user_icon.png" />
     <Resource Include="Resources\Images\virus.png" />
   </ItemGroup>

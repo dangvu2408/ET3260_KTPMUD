@@ -27,6 +27,7 @@ namespace ET3260_Project.Views
         {
             InitializeComponent();
             database = new Database.Database();
+
         }
 
         private void RegisterClick(object sender, RoutedEventArgs e)
@@ -71,5 +72,34 @@ namespace ET3260_Project.Views
                 MessageBox.Show("Lỗi 00: " + ex.Message);
             }
         }
+
+        private void TextBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                PlaceholderBehavior.SetPlaceholder(textBox, "Nhập email");
+            }
+        }
+
+        private void TextBox_Loaded1(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                PlaceholderBehavior.SetPlaceholder(textBox, "Nhập tên đầy đủ");
+            }
+        }
+
+        private void PasswordBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            var textBox = sender as PasswordBox;
+            if (textBox != null)
+            {
+                // Đặt Placeholder cho TextBox
+                PlaceholderBehavior.SetPlaceholder(textBox, "Nhập mật khẩu");
+            }
+        }
+
     }
 }
